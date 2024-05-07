@@ -1,0 +1,4 @@
+name: SimpleTrolling
+version: '${project.version}'
+main: ru.don1x.simpletrolling.SimpleTrolling
+api-version: '1.16'
