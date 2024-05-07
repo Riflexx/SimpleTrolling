@@ -15,7 +15,7 @@ public final class SimpleTrolling extends JavaPlugin {
 
     @Override
     public void onDisable() {
-        // Plugin shutdown logic
+
     }
     public static SimpleTrolling getPlugin() {return plugin;}
 }
