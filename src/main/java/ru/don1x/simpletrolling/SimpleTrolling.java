@@ -11,6 +11,7 @@ public final class SimpleTrolling extends JavaPlugin {
         plugin = this;
         getCommand("trolling").setExecutor(new Commands());
         Bukkit.getPluginManager().registerEvents(new Listener(), this);
+        saveDefaultConfig();
     }
 
     @Override

@@ -1,5 +1,5 @@
 name: SimpleTrolling
-version: '${project.version}'
+version: '1.0'
 main: ru.don1x.simpletrolling.SimpleTrolling
 api-version: '1.16'
 commands:

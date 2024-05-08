@@ -1,5 +1,6 @@
 package ru.don1x.simpletrolling;
 
+import org.bukkit.Bukkit;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
@@ -11,7 +12,13 @@ public class Commands implements CommandExecutor {
         if (commandSender instanceof Player) {
             Player player = (Player) commandSender;
             if (player.hasPermission("simpletrolling.use")) {
-                if (strings[0].equals("help") || strings[0].equals("?") || strings[0].equals("info") || strings.length == 0) {
+                if (strings[0].equals("DAMAGE")) {
+
+                        String type = strings[0];
+                        Player playerArg = Bukkit.getPlayer(strings[1]);
+                        int power = Integer.parseInt(strings[2]);
+                        assert playerArg != null;
+                    don1xUtils.createPrank(playerArg.getName(), type, power);
 
                 }
             }
